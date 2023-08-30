@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  
+}
+a{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+ul , li {
+  list-style: none;
+}
+::-webkit-scrollbar {
+  width: 0.5em; 
+  border-radius: 0.75rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #FFCC8D;
+
+}
+::-webkit-scrollbar-track {
+  background-color: white; 
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./font/Inter-Regular.ttf') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+.container-btn{
+  width: 60px;
+  height: 60px;
+  background-color: #FF8C38;
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+  padding-inline-start: 1rem;
+  transition: 1s ease-in-out;
+  font-size: 0.8rem;
+}
+.container-btn:focus{
+  width: 60%;
+  height: 50px;
+  clip-path: polygon(100% 1%, 100% 50%, 100% 100%, 0% 100%, 0 49%, 0% 0%);
+  background-image: url(./image/btn-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+.about-wrapper{color: rgb(255, 255, 255); background-color: #111111; }
+.about-container-btn{
+  color: rgb(255, 255, 255);
+  transform: perspective(250px) rotateX(20deg);
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+  background-image: url(./image/about-bg-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom ;
+  margin-bottom: 2rem;
+}
+.shape-container{
+  transform: perspective(250px) rotateX(-20deg);
+  transition: all 2s ease-in;
+  font-weight: bolder;
+  background-color: #ffffff49;
+  backdrop-filter: blur(5px);
+  border-radius: 0.7rem;
+  padding: 1rem;
+
+}
+footer {
+  z-index: 999;
+}
