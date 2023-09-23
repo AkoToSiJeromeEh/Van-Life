@@ -20,6 +20,11 @@ export default  {
 
         },
       },
+      width : {
+        tablet : '',
+        laptop : '',
+        mobile : '',
+      }
     },
   },
   plugins: [],
